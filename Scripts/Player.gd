@@ -89,3 +89,20 @@ func shoot():
 	bullet.scale = Vector3.ONE
 	
 	ammo -+ 1
+
+func take_damage (damage):
+	curHp -= damage
+	if curHp <= 0:
+		die()
+
+func die():
+	pass
+
+func add_score (amount):
+	score += amount
+
+func add_health (amount):
+	curHp = clamp(curHp + amount, 0, maxHp)
+
+func add_ammo (amount):
+	ammo += amount

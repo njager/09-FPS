@@ -1,10 +1,11 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://Assets/Models/Environment/Tree_2.obj" type="ArrayMesh" id=1]
 [ext_resource path="res://Assets/Models/Environment/Ground.obj" type="ArrayMesh" id=2]
 [ext_resource path="res://Assets/Models/Environment/Fence.obj" type="ArrayMesh" id=3]
 [ext_resource path="res://Assets/Models/Environment/Tree_1.obj" type="ArrayMesh" id=4]
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Scenes/Enemy.tscn" type="PackedScene" id=6]
 
 [sub_resource type="ConcavePolygonShape" id=1]
 data = PoolVector3Array( 0, 0, 0, 3, 0.3, 0, 3, 0, 0, 3, 0.3, 0, 0, 0, 0, 0, 0.3, 0, 0, 0.3, -3, 3, 0.3, 0, 0, 0.3, 0, 3, 0.3, 0, 0, 0.3, -3, 3, 0.3, -3, 3, 0, -3, 3, 0.3, 0, 3, 0.3, -3, 3, 0.3, 0, 3, 0, -3, 3, 0, 0, 3, 0, -3, 0, 0, 0, 3, 0, 0, 0, 0, 0, 3, 0, -3, 0, 0, -3, 0, 0.3, -3, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0.3, -3, 0, 0.3, 0, 3, 0, -3, 0, 0.3, -3, 0, 0, -3, 0, 0.3, -3, 3, 0, -3, 3, 0.3, -3 )
@@ -526,3 +527,6 @@ shadow_enabled = true
 
 [node name="Player" parent="." instance=ExtResource( 5 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0.5, -12 )
+
+[node name="Enemy" parent="." instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.0612, 1.5, -15.2445 )
