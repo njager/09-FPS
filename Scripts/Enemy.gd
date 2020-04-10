@@ -20,7 +20,7 @@ func _on_Timer_timeout():
 	if translation.distance_to(player.translation) <= attackDist:
 		attack()
 
-func _physics_process(Delta):
+func _physics_process(_Delta):
 	#calculate direction to player and move towards player
 	var dir = (player.translation - translation).normalized()
 	dir.y = 0

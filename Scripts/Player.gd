@@ -10,6 +10,9 @@ var score : int = 0
 onready var muzzle = get_node("Camera/GunModel/Muzzle")
 onready var bulletScene = preload("res://Scenes/Bullet.tscn")
 
+#reference UI node
+onready var ui : Node = get_node("/root/MainScene/CanvasLayer/UI")
+
 #physics
 var moveSpeed: float = 5.0
 var jumpForce : float = 5.0
@@ -30,6 +33,11 @@ onready var camera = get_node("Camera")
 func _ready ():
 	#hide and lock the mouse cursor
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+	
+	#set the UI
+	ui.update_health_bar(curHp, maxHp)
+	ui.update_ammo_text(ammo)
+	ui.update_score_text(score)
 
 func _input (event):
 	
@@ -88,21 +96,31 @@ func shoot():
 	bullet.global_transform = muzzle.global_transform
 	bullet.scale = Vector3.ONE
 	
-	ammo -+ 1
+	ammo -= 1
+	
+	ui.update_ammo_text(ammo)
 
 func take_damage (damage):
 	curHp -= damage
 	if curHp <= 0:
 		die()
+	
+	ui.update_health_bar(curHp, maxHp)
 
 func die():
 	pass
 
 func add_score (amount):
 	score += amount
+	
+	ui.update_score_text(score)
 
 func add_health (amount):
 	curHp = clamp(curHp + amount, 0, maxHp)
+	
+	ui.update_health_bar(curHp, maxHp)
 
 func add_ammo (amount):
 	ammo += amount
+	
+	ui.update_ammo_text(ammo)
