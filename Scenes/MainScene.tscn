@@ -40,7 +40,7 @@ data = PoolVector3Array( 0, 0, 0, 0.2013, 0, -0.2013, 0, 0, -0.2013, 0.2013, 0, 
 [node name="Models" type="Node" parent="."]
 
 [node name="Ground" type="MeshInstance" parent="Models"]
-transform = Transform( 8, 0, 0, 0, 1, 0, 0, 0, 8, 0.100092, -0.0454111, -0.0514183 )
+transform = Transform( 8, 0, 0, 0, 1, 0, 0, 0, 8, 0.229273, -0.0670538, -0.0423908 )
 mesh = ExtResource( 2 )
 material/0 = null
 material/1 = null
@@ -318,6 +318,76 @@ material/0 = null
 [node name="CollisionShape" type="CollisionShape" parent="Models/Fence7/StaticBody"]
 shape = SubResource( 7 )
 
+[node name="Fence42" type="MeshInstance" parent="Models"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5, 1.3, -23.5 )
+mesh = ExtResource( 3 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="Models/Fence42"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Models/Fence42/StaticBody"]
+shape = SubResource( 7 )
+
+[node name="Fence41" type="MeshInstance" parent="Models"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 1.3, -23.5 )
+mesh = ExtResource( 3 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="Models/Fence41"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Models/Fence41/StaticBody"]
+shape = SubResource( 7 )
+
+[node name="Fence40" type="MeshInstance" parent="Models"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6.5, 1.3, -23.5 )
+mesh = ExtResource( 3 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="Models/Fence40"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Models/Fence40/StaticBody"]
+shape = SubResource( 7 )
+
+[node name="Fence39" type="MeshInstance" parent="Models"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9.5, 1.3, -23.5 )
+mesh = ExtResource( 3 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="Models/Fence39"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Models/Fence39/StaticBody"]
+shape = SubResource( 7 )
+
+[node name="Fence38" type="MeshInstance" parent="Models"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.5, 1.3, -23.5 )
+mesh = ExtResource( 3 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="Models/Fence38"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Models/Fence38/StaticBody"]
+shape = SubResource( 7 )
+
+[node name="Fence37" type="MeshInstance" parent="Models"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.5, 1.3, -23.5 )
+mesh = ExtResource( 3 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="Models/Fence37"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Models/Fence37/StaticBody"]
+shape = SubResource( 7 )
+
+[node name="Fence36" type="MeshInstance" parent="Models"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18.5, 1.3, -23.5 )
+mesh = ExtResource( 3 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="Models/Fence36"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Models/Fence36/StaticBody"]
+shape = SubResource( 7 )
+
 [node name="Fence8" type="MeshInstance" parent="Models"]
 transform = Transform( -1.62921e-07, 0, -1, 0, 1, 0, 1, 0, -1.62921e-07, 23, 0.3, -23.5 )
 mesh = ExtResource( 3 )
@@ -386,6 +456,76 @@ material/0 = null
 [node name="StaticBody" type="StaticBody" parent="Models/Fence14"]
 
 [node name="CollisionShape" type="CollisionShape" parent="Models/Fence14/StaticBody"]
+shape = SubResource( 7 )
+
+[node name="Fence49" type="MeshInstance" parent="Models"]
+transform = Transform( -1.62921e-07, 0, -1, 0, 1, 0, 1, 0, -1.62921e-07, 23, 1.3, -23.5 )
+mesh = ExtResource( 3 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="Models/Fence49"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Models/Fence49/StaticBody"]
+shape = SubResource( 7 )
+
+[node name="Fence48" type="MeshInstance" parent="Models"]
+transform = Transform( -1.62921e-07, 0, -1, 0, 1, 0, 1, 0, -1.62921e-07, 23, 1.3, -20.5 )
+mesh = ExtResource( 3 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="Models/Fence48"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Models/Fence48/StaticBody"]
+shape = SubResource( 7 )
+
+[node name="Fence47" type="MeshInstance" parent="Models"]
+transform = Transform( -1.62921e-07, 0, -1, 0, 1, 0, 1, 0, -1.62921e-07, 23, 1.3, -17.5 )
+mesh = ExtResource( 3 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="Models/Fence47"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Models/Fence47/StaticBody"]
+shape = SubResource( 7 )
+
+[node name="Fence46" type="MeshInstance" parent="Models"]
+transform = Transform( -1.62921e-07, 0, -1, 0, 1, 0, 1, 0, -1.62921e-07, 23, 1.3, -14.5 )
+mesh = ExtResource( 3 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="Models/Fence46"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Models/Fence46/StaticBody"]
+shape = SubResource( 7 )
+
+[node name="Fence45" type="MeshInstance" parent="Models"]
+transform = Transform( -1.62921e-07, 0, -1, 0, 1, 0, 1, 0, -1.62921e-07, 23, 1.3, -11.5 )
+mesh = ExtResource( 3 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="Models/Fence45"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Models/Fence45/StaticBody"]
+shape = SubResource( 7 )
+
+[node name="Fence44" type="MeshInstance" parent="Models"]
+transform = Transform( -1.62921e-07, 0, -1, 0, 1, 0, 1, 0, -1.62921e-07, 23, 1.3, -8.5 )
+mesh = ExtResource( 3 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="Models/Fence44"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Models/Fence44/StaticBody"]
+shape = SubResource( 7 )
+
+[node name="Fence43" type="MeshInstance" parent="Models"]
+transform = Transform( -1.62921e-07, 0, -1, 0, 1, 0, 1, 0, -1.62921e-07, 23, 1.3, -5.5 )
+mesh = ExtResource( 3 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="Models/Fence43"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Models/Fence43/StaticBody"]
 shape = SubResource( 7 )
 
 [node name="Fence15" type="MeshInstance" parent="Models"]
@@ -458,6 +598,116 @@ material/0 = null
 [node name="CollisionShape" type="CollisionShape" parent="Models/Fence21/StaticBody"]
 shape = SubResource( 7 )
 
+[node name="Fence56" type="MeshInstance" parent="Models"]
+transform = Transform( -1, 0, 3.25841e-07, 0, 1, 0, -3.25841e-07, 0, -1, 23, 1.3, -1 )
+mesh = ExtResource( 3 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="Models/Fence56"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Models/Fence56/StaticBody"]
+shape = SubResource( 7 )
+
+[node name="Fence57" type="MeshInstance" parent="Models"]
+transform = Transform( 2.65431e-14, 1.62921e-07, 1, 1, -1.62921e-07, 0, 1.62921e-07, 1, -1.62921e-07, 23, 0.3, -2.3 )
+mesh = ExtResource( 3 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="Models/Fence57"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Models/Fence57/StaticBody"]
+shape = SubResource( 7 )
+
+[node name="Fence58" type="MeshInstance" parent="Models"]
+transform = Transform( -1.62921e-07, -1, 0, 1, -1.62921e-07, 0, 0, 0, 1, 22.8, 0.3, -23.5 )
+mesh = ExtResource( 3 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="Models/Fence58"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Models/Fence58/StaticBody"]
+shape = SubResource( 7 )
+
+[node name="Fence59" type="MeshInstance" parent="Models"]
+transform = Transform( 2.65431e-14, 1.62921e-07, 1, 1, -1.62921e-07, 0, 1.62921e-07, 1, -1.62921e-07, 1, 0.3, -23.2 )
+mesh = ExtResource( 3 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="Models/Fence59"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Models/Fence59/StaticBody"]
+shape = SubResource( 7 )
+
+[node name="Fence60" type="MeshInstance" parent="Models"]
+transform = Transform( -1.62921e-07, -1, 0, 1, -1.62921e-07, 0, 0, 0, 1, 2, 0.3, -0.8 )
+mesh = ExtResource( 3 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="Models/Fence60"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Models/Fence60/StaticBody"]
+shape = SubResource( 7 )
+
+[node name="Fence55" type="MeshInstance" parent="Models"]
+transform = Transform( -1, 0, 3.25841e-07, 0, 1, 0, -3.25841e-07, 0, -1, 20, 1.3, -1 )
+mesh = ExtResource( 3 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="Models/Fence55"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Models/Fence55/StaticBody"]
+shape = SubResource( 7 )
+
+[node name="Fence54" type="MeshInstance" parent="Models"]
+transform = Transform( -1, 0, 3.25841e-07, 0, 1, 0, -3.25841e-07, 0, -1, 17, 1.3, -1 )
+mesh = ExtResource( 3 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="Models/Fence54"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Models/Fence54/StaticBody"]
+shape = SubResource( 7 )
+
+[node name="Fence53" type="MeshInstance" parent="Models"]
+transform = Transform( -1, 0, 3.25841e-07, 0, 1, 0, -3.25841e-07, 0, -1, 14, 1.3, -1 )
+mesh = ExtResource( 3 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="Models/Fence53"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Models/Fence53/StaticBody"]
+shape = SubResource( 7 )
+
+[node name="Fence52" type="MeshInstance" parent="Models"]
+transform = Transform( -1, 0, 3.25841e-07, 0, 1, 0, -3.25841e-07, 0, -1, 11, 1.3, -1 )
+mesh = ExtResource( 3 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="Models/Fence52"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Models/Fence52/StaticBody"]
+shape = SubResource( 7 )
+
+[node name="Fence51" type="MeshInstance" parent="Models"]
+transform = Transform( -1, 0, 3.25841e-07, 0, 1, 0, -3.25841e-07, 0, -1, 8, 1.3, -1 )
+mesh = ExtResource( 3 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="Models/Fence51"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Models/Fence51/StaticBody"]
+shape = SubResource( 7 )
+
+[node name="Fence50" type="MeshInstance" parent="Models"]
+transform = Transform( -1, 0, 3.25841e-07, 0, 1, 0, -3.25841e-07, 0, -1, 5, 1.3, -1 )
+mesh = ExtResource( 3 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="Models/Fence50"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Models/Fence50/StaticBody"]
+shape = SubResource( 7 )
+
 [node name="Fence22" type="MeshInstance" parent="Models"]
 transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, 1, 0.3, -1 )
 mesh = ExtResource( 3 )
@@ -518,14 +768,84 @@ material/0 = null
 [node name="CollisionShape" type="CollisionShape" parent="Models/Fence27/StaticBody"]
 shape = SubResource( 7 )
 
+[node name="Fence34" type="MeshInstance" parent="Models"]
+transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, 1, 1.3, -1 )
+mesh = ExtResource( 3 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="Models/Fence34"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Models/Fence34/StaticBody"]
+shape = SubResource( 7 )
+
+[node name="Fence33" type="MeshInstance" parent="Models"]
+transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, 1, 1.3, -4 )
+mesh = ExtResource( 3 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="Models/Fence33"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Models/Fence33/StaticBody"]
+shape = SubResource( 7 )
+
+[node name="Fence32" type="MeshInstance" parent="Models"]
+transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, 1, 1.3, -7 )
+mesh = ExtResource( 3 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="Models/Fence32"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Models/Fence32/StaticBody"]
+shape = SubResource( 7 )
+
+[node name="Fence31" type="MeshInstance" parent="Models"]
+transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, 1, 1.3, -10 )
+mesh = ExtResource( 3 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="Models/Fence31"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Models/Fence31/StaticBody"]
+shape = SubResource( 7 )
+
+[node name="Fence30" type="MeshInstance" parent="Models"]
+transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, 1, 1.3, -13 )
+mesh = ExtResource( 3 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="Models/Fence30"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Models/Fence30/StaticBody"]
+shape = SubResource( 7 )
+
+[node name="Fence29" type="MeshInstance" parent="Models"]
+transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, 1, 1.3, -16 )
+mesh = ExtResource( 3 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="Models/Fence29"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Models/Fence29/StaticBody"]
+shape = SubResource( 7 )
+
 [node name="Fence28" type="MeshInstance" parent="Models"]
-transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, 1, 0.3, -19 )
+transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, 1, 1.3, -19 )
 mesh = ExtResource( 3 )
 material/0 = null
 
 [node name="StaticBody" type="StaticBody" parent="Models/Fence28"]
 
 [node name="CollisionShape" type="CollisionShape" parent="Models/Fence28/StaticBody"]
+shape = SubResource( 7 )
+
+[node name="Fence35" type="MeshInstance" parent="Models"]
+transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, 1, 0.3, -19 )
+mesh = ExtResource( 3 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="Models/Fence35"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Models/Fence35/StaticBody"]
 shape = SubResource( 7 )
 
 [node name="DirectionalLight" type="DirectionalLight" parent="."]
@@ -535,11 +855,22 @@ shadow_enabled = true
 [node name="Player" parent="." instance=ExtResource( 5 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0.5, -12 )
 
-[node name="Enemy" parent="." instance=ExtResource( 6 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.0612, 1.5, -15.2445 )
-
 [node name="Pickup_Health" parent="." instance=ExtResource( 8 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 2, -11 )
 
 [node name="Pickup_Ammo" parent="." instance=ExtResource( 7 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18.1504, 1.43119, -14.6466 )
+
+[node name="Enemies" type="Node" parent="."]
+
+[node name="Enemy" parent="Enemies" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.0612, 1.5, -15.2445 )
+
+[node name="Enemy2" parent="Enemies" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.71181, 1.45459, -17.5323 )
+
+[node name="Enemy3" parent="Enemies" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 1.455, -20 )
+
+[node name="Enemy4" parent="Enemies" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 1.455, -5 )

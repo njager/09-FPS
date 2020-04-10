@@ -12,6 +12,7 @@ onready var startYPos : float = translation.y
 var bobHeight : float = 1.0
 var bobSpeed : float = 1.0
 var bobbingUp : bool = true
+onready var Boop : AudioStreamPlayer3D = get_node("Boop")
 
 func _process (delta):
 	#move up or down, thenif at the top move downwards and if at bottom move up
@@ -29,5 +30,6 @@ func _on_Pickup_body_entered (body):
 func pickup (player):
 	if type == PickupType.Health:
 		player.add_health(amount)
+		
 	elif type == PickupType.Ammo:
 		player.add_ammo(amount)

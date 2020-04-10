@@ -52,7 +52,7 @@ func _process (delta):
 	mouseDelta = Vector2()
 	
 	#check to see if shooting
-	if Input.is_action_just_pressed("shoot"):
+	if Input.is_action_just_pressed("shoot") and ammo > 0:
 		shoot()
 	
 func _physics_process (Delta):
@@ -93,9 +93,9 @@ func shoot():
 	var bullet = bulletScene.instance()
 	get_node("/root/MainScene").add_child(bullet)
 	
+	$Gunshot.playing = true
 	bullet.global_transform = muzzle.global_transform
 	bullet.scale = Vector3.ONE
-	
 	ammo -= 1
 	
 	ui.update_ammo_text(ammo)
@@ -112,15 +112,15 @@ func die():
 
 func add_score (amount):
 	score += amount
-	
+	$Boop.playing = true
 	ui.update_score_text(score)
 
 func add_health (amount):
 	curHp = clamp(curHp + amount, 0, maxHp)
-	
+	$Ring.playing = true
 	ui.update_health_bar(curHp, maxHp)
 
 func add_ammo (amount):
 	ammo += amount
-	
+	$Ring.playing = true
 	ui.update_ammo_text(ammo)
