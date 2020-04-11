@@ -108,7 +108,7 @@ func take_damage (damage):
 	ui.update_health_bar(curHp, maxHp)
 
 func die():
-	pass
+	queue_free()
 
 func add_score (amount):
 	score += amount
